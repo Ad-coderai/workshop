@@ -1,0 +1,86 @@
+* when number of variable are values are not matched two condition occurs :
+ >>> if number of variabes are greater then the values assigned then the output is an ivalid syntax.
+     example: a,b,c = 10
+              print(a,b,c)  #error
+
+ >>> if there is one variable and n number of values then the output will be in the form of tuple.
+     example: a = 10,20,30
+              print(a)   #gives in the form of tuple (immutable and protects)
+
+
+*when we have similar variables and different values the variables get overwritten and takes the latest vaue.
+
+*to get the list of keyword in ur python use:
+    import keyword
+    print(keyword.kwlist)   #35 keyword exist
+
+*to get address of a variable us the keyword "id" 
+    a=10
+    print(id(a))
+
+
+*rules for id :
+>>> identifiers must not start with numbers 
+>>> identifiers can start with small or capital letters 
+>>> we must not use special charecters at the start except underscore 
+>>> length of a variable must be 72 charecters
+>>> the keyword can be alpha numeric 
+>>> there must not be any spaces in a variable
+
+
+*datatypes :
+>>> single valued
+    >int
+    >float
+    >complex  [must have j or J its not case sensitive]
+    >boolean
+
+>>> multi valued
+    >string
+    >list 
+    >dictionary
+    >tuple
+    >sets
+
+
+**** control flow ****
+
+>>>conditional statements 
+   >if
+   >if-else
+   >if-else-if
+   >while
+   >do-while
+
+>>>looping statements
+   >for
+   >
+   >switch
+
+
+*input types:
+ :input() function takes the input in the form of string
+ >input()        #string
+ >int(input())   #integer
+ >list(input())  #gives values seperated by commas
+ >eval(input())  #self evaluates types
+
+*ASCII VALUES
+:use ord() to get the ascii value of a charecter 
+    for example:
+                 print(ord("a")) #97
+
+
+*** formatted output ***
+f'{variable having value} is a string '    #syntax
+
+*reverse a number*
+>>> n=int(input('enter : '))
+    rev=0
+    while n>0:
+        id=n%10
+        n=n//10
+        rev=rev*10+id
+    print(rev)
+
+
